@@ -1,17 +1,24 @@
-import React, { useContext } from 'react';
-import { View, Button } from 'react-native';
-import { NavigationContext } from './Navigation';
-import { useNavigate } from '../hooks/useNavigate';
+import React from 'react';
+import { View } from 'react-native';
+import { Header } from './Header';
 
-export const Navigatable = ({ children }) => {
-  const { routes } = useContext(NavigationContext);
-  const { back } = useNavigate();
+type NavigatableProps = {
+  title: string;
+  leading: string;
+  trailing: string;
+  children: any;
+};
+
+export const Navigatable = ({
+  children,
+  leading,
+  trailing,
+  title,
+}: NavigatableProps) => {
   return (
     <View>
-      <View style={{ borderBottomWidth: 1 }}>
-        {routes.length > 1 && <Button title='back' onPress={back} />}
-      </View>
-      {children}
+      <Header title={title} leading={leading} trailing={trailing} />
+      <View>{children}</View>
     </View>
   );
 };

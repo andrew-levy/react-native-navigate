@@ -26,7 +26,7 @@ const App = () => {
 };
 ```
 
-To make your components _screens_ with navigation features, wrap them in a `Navigatable` component. To navigate to a different Navigatable view, use the `useNavigate` hook.
+To make your components look and feel like _screens_ with navigation features, wrap them in a `Navigatable` component. To navigate to a different Navigatable view, use the `useNavigate` hook.
 
 ```jsx
 import { Navigatable, useNavigate } from 'react-native-navigatable';
