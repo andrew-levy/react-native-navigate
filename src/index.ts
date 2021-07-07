@@ -1,2 +1,2 @@
-export { Navigation } from './components/Navigation';
-export { Navigatable } from './components/Navigatable';
+export { NavigationProvider } from './components/NavigationProvider';
+export { NavigationView } from './components/NavigationView';

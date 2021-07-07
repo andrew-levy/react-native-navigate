@@ -1,5 +1,5 @@
 {
-  "name": "react-native-navigatable",
+  "name": "react-native-navigate",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -32,7 +32,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/andrew-levy/"
+    "url": "https://github.com/andrew-levy/react-native-navigate"
   },
   "keywords": [
     "react",

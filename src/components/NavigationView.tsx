@@ -2,19 +2,19 @@ import React from 'react';
 import { View } from 'react-native';
 import { Header } from './Header';
 
-type NavigatableProps = {
+type NavigationViewProps = {
   title: string;
   leading: string;
   trailing: string;
   children: any;
 };
 
-export const Navigatable = ({
+export const NavigationView = ({
   children,
   leading,
   trailing,
   title,
-}: NavigatableProps) => {
+}: NavigationViewProps) => {
   return (
     <View>
       <Header title={title} leading={leading} trailing={trailing} />
