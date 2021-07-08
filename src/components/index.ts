@@ -1,2 +1,2 @@
-export { NavigationProvider } from './NavigationProvider';
+export { NavigationRoot } from './NavigationRoot';
 export { NavigationView } from './NavigationView';

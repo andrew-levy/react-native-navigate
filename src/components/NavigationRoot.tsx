@@ -2,7 +2,7 @@ import React, { useState, createContext } from 'react';
 
 export const NavigationContext = createContext(null);
 
-export const NavigationProvider = ({ children }) => {
+export const NavigationRoot = ({ children }) => {
   const [routes, setRoutes] = useState([children]);
   const currentRoute = routes[routes.length - 1];
   return (

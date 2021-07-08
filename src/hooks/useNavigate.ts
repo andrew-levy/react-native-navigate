@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { NavigationContext } from '../components/Navigation';
+import { NavigationContext } from '../components/NavigationRoot';
 
 type NavigationFunctions = {
   to: (any) => void;
@@ -10,6 +10,9 @@ export const useNavigate = (): NavigationFunctions => {
   const { routes, setRoutes } = useContext(NavigationContext);
   return {
     to: (newRoute) => setRoutes([...routes, newRoute]),
-    back: () => setRoutes(routes.filter((_, i) => i !== routes.length - 1)),
+    back: () => {
+      routes.pop();
+      setRoutes([...routes]);
+    },
   };
 };

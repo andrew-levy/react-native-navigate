@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 import { useNavigate } from '../hooks/useNavigate';
-import { NavigationContext } from './Navigation';
+import { NavigationContext } from './NavigationRoot';
 
 type HeaderProps = { title: string; leading: string; trailing: string };
 

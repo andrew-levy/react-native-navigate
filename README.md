@@ -12,16 +12,16 @@ yarn add react-native-navigate
 
 ## Usage
 
-At the root of your app, use the `NavigationProvider` component. The first and only child of a `NavigationProvider` component should be the initial screen you want to show.
+At the root of your app, use the `NavigationRoot` component. The first and only child of a `NavigationRoot` component should be the initial screen you want to show.
 
 ```jsx
-import { NavigationProvider } from 'react-native-navigate';
+import { NavigationRoot } from 'react-native-navigate';
 
 const App = () => {
   return (
-    <NavigationProvider>
+    <NavigationRoot>
       <Home />
-    </NavigationProvider>
+    </NavigationRoot>
   );
 };
 ```
@@ -41,3 +41,15 @@ const Home = () => {
   );
 };
 ```
+
+<!-- ## Documentation
+
+### `NavigationRoot`
+
+The `NavigationRoot` component is the container for all of your list items and list sections.
+
+| Prop        | Type        | Description                                  | Default                  | Required                 |
+| ----------- | ----------- | -------------------------------------------- | ------------------------ | ------------------------ |
+| `listStyle` | `ListStyle` | The style of the list                        | `ListStyle.InsetGrouped` | :heavy_multiplication_x: |
+| `sideBar`   | `boolean`   | Put icon in the leading sidebar of each item | `false`                  | :heavy_multiplication_x: |
+| `children`  | `ReactNode` | The list items or sections                   | `null`                   | :heavy_check_mark:       | -->
